@@ -1,0 +1,85 @@
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-bottom: 15px;
+  background: #fff;
+  z-index: 10000;
+  color: rgb(3, 3, 14);
+  user-select: none;
+  transition: 0.4s ease-in-out;
+}
+header h1 {
+  margin-right: 60px;
+  font-size: 20px;
+  cursor: pointer;
+}
+header h1 span {
+  color: #ff0158;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+header ul li {
+  list-style: none;
+  margin-right: 30px;
+  cursor: pointer;
+}
+header ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(3, 3, 14);
+}
+header ul li a:after {
+  transition: all ease-in-out 0.2s;
+  background: none repeat scroll 0 0 rgb(3, 3, 14);
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #ff0158;
+}
+header ul li a:hover:after {
+  width: 100%;
+  color: rgb(3, 3, 14);
+}
+
+header ul li .h.active {
+  color: #ff0158 !important;
+}
+
+header ul li .h.active:after {
+  height: 0px;
+}
+.make-navbar-bg {
+  background-color: white;
+  -webkit-box-shadow: 0 20px 25px -6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 25px -6px rgba(0, 0, 0, 0.3);
+  color: #000;
+}
+.add-h {
+  color: #000;
+}
+.h:hover {
+  color: rgb(3, 3, 14) !important;
+  text-decoration: none;
+}
+.add-h:hover {
+  color: rgb(3, 3, 14) !important;
+}
+.fixed-bottom,
+.fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
