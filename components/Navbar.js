@@ -6,7 +6,6 @@ import { UserContext } from "@/util/UserContext";
 import Signout from "./Signout";
 const Navbar = () => {
   const data = useContext(UserContext);
-
   return (
     <div>
       <header className="header">
