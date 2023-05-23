@@ -87,3 +87,14 @@ header ul li .h.active:after {
   left: 0;
   z-index: 1030;
 }
+.nav-image-user {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.nav-image-guest {
+  width: 24px;
+  height: 24px;
+  display: block;
+}

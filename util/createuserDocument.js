@@ -1,14 +1,5 @@
 import { db } from "../firebase/firebaseInitialize";
-import {
-  doc,
-  document,
-  onSnapshot,
-  query,
-  collection,
-  getDoc,
-  updateDoc,
-  setDoc,
-} from "firebase/firestore";
+import { doc, getDoc, setDoc } from "firebase/firestore";
 
 export const createuserDocument = async (user, additionalData) => {
   if (!user) return;
