@@ -8,11 +8,6 @@ import { useState } from "react";
 
 const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 
-// export const metadata = {
-//   title: "TuneTrail",
-//   description: "Never Be Bored again",
-// };
-
 export default function RootLayout({ children }) {
   const [user, setUser] = useState({});
 
